@@ -1,0 +1,32 @@
+{
+  "name": "initiative-client",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.2.3",
+    "redux-logger": "^2.7.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "immutable": "^3.8.1",
+    "react": "^15.3.1",
+    "react-addons-pure-render-mixin": "^15.3.1",
+    "react-bootstrap": "^0.30.5",
+    "react-dom": "^15.3.1",
+    "react-masonry-component": "^4.2.1",
+    "react-overlays": "^0.6.10",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.7.0",
+    "redux": "^3.5.2",
+    "redux-form": "^6.1.0",
+    "socket.io-client": "^1.4.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/react-scripts/config/eslint.js"
+  }
+}
