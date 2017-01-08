@@ -92,8 +92,9 @@ class GMView extends Component {
                 <h1>{currentCard.get('name')}</h1>
                 <h3>{'Initiative Roll: ' + currentCard.get('roll')}</h3>
                 <p>Armor Class: {currentCard.get('ac')}
+                <br/>Touch AC: {currentCard.get('touchAC')}
                 <br/>Flat-footed AC: {currentCard.get('flatfootedAC')}
-                <br/>Touch AC: {currentCard.get('touchAC')}</p>
+                <br/>CMD: {currentCard.get('cmd')}</p>
                 <DelayModal handleDelayCard={this.handleDelayCard}  currentCard={currentCard} combatants={combatants}/>
               </Jumbotron>
             }

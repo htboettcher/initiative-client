@@ -19,6 +19,11 @@ const validate = values => {
   } else if (values.touchAC > 99) {
     errors.touchAC = 'Must be 99 or less'
   }
+  if (!values.cmd) {
+    errors.cmd = 'Required'
+  } else if (values.cmd > 99) {
+    errors.cmd = 'Must be 99 or less'
+  }
   if (values.status && values.status.length > 50) {
     errors.status = 'dis is too long'
   }
@@ -37,8 +42,9 @@ const PlayerUpdateForm = (props) => {
   return (
     <form onSubmit={handleSubmit}>
       <Field disabled={disabled} name="ac" type="number" component={renderField} label="Armor Class"/>
-      <Field disabled={disabled} name="flatfootedAC" type="number" component={renderField} label="Flat-footed AC"/>
       <Field disabled={disabled} name="touchAC" type="number" component={renderField} label="Touch AC"/>
+      <Field disabled={disabled} name="flatfootedAC" type="number" component={renderField} label="Flat-footed AC"/>
+      <Field disabled={disabled} name="cmd" type="number" component={renderField} label="CMD"/>
       <Field disabled={disabled} name="status" type="text" component={renderField} label="Status"/>
       <button disabled={!dirty} className="btn btn-success" type="submit">{!dirty ? 'No Changes' : 'Submit Changes'}</button>
     </form>

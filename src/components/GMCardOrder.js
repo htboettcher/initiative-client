@@ -28,8 +28,9 @@ class CardOrderRow extends Component {
           </Col>
           <Col xs={5}>
             <p>Armor Class: {data.get('ac')}
+            <br/>Touch AC: {data.get('touchAC')}
             <br/>Flat-footed AC: {data.get('flatfootedAC')}
-            <br/>Touch AC: {data.get('touchAC')}</p>
+            <br/>CMD: {data.get('cmd')}</p>
           </Col>
           <Col xs={2}>
             <Glyphicon glyph="remove" onClick={() => removeCardClick(data)}/><br/>
