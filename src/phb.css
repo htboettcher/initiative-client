@@ -133,6 +133,11 @@ h5 {
 .panel-default > .panel-heading {
   border-color: black;
 }
+
+.img-gray {
+  filter: grayscale(100%);
+}
+
 hr {
   visibility: visible;
   height: 6px;
